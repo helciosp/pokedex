@@ -17,9 +17,9 @@ body {
 .pokemon {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: calc(90% / 3);
+    width: 145px;
     height: 250px;
-    margin: auto;
+    margin: 5px;
     margin-bottom: 18px;
 }
 .pokemon:hover {
