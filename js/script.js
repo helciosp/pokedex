@@ -26,9 +26,9 @@ function buscarInformacoes(url) {
         const types = data.types.map(item => `<li class="type">${item.type.name}</li>`);
 
         $(`#${data.name}`).append(
-            `<img src=${data.sprites.front_default} />
-            <p>${data.id}</p>
-            <h3>${data.name}</h3>
+            `<p class="id">#${data.id}</p>
+            <img class="imagem" src=${data.sprites.front_default} />
+            <h3 class="nome">${data.name}</h3>
             <ul class="types">
                 ${types.join("")}
             </ul>`
