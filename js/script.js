@@ -23,7 +23,7 @@ function criarElementos(pokedex) {
 
 function buscarInformacoes(url) {
     $.get(url, (data) => {
-        const types = data.types.map(item => `<li class="type">${item.type.name}</li>`);
+        const types = data.types.map(item => `<li class="type ${item.type.name}">${item.type.name}</li>`);
 
         $(`#${data.name}`).append(
             `<p class="id">#${data.id}</p>
