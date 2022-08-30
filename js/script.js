@@ -27,7 +27,7 @@ function buscarInformacoes(url) {
 
         $(`#${data.name}`).append(
             `<p class="id">#${data.id}</p>
-            <img class="imagem" src=${data.sprites.front_default} />
+            <img class="imagem" src=${data.sprites.front_default} title="PokeAPI" />
             <h3 class="nome">${data.name}</h3>
             <ul class="types">
                 ${types.join("")}
