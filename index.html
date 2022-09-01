@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
     <title>Pokédex</title>
 </head>
 <body>
     <header>
         <h1>Pokédex</h1>
-        <ul>
-            <li><a href="https://github.com/helciosp">@helciosp</a></li>
+        <ul class="list-style">
+            <li class="github">
+                <a target="_blank" href="https://github.com/helciosp">by helciosp</a>
+            </li>
+            <li>
+                <button type="button" id="template" class="button">Light</button>
+            </li>
         </ul>
     </header>
 
-    <main id="main">
+    <main id="main" class="text-center">
         <div id="pokedex">
-            <div id="pokedex-div"></div>
-            <button type="button" id="load">Carregar mais Pokémon</button>
+            <div id="pokedex-div" class="flex-wrap"></div>
+            <button type="button" id="load" class="button dark">Carregar mais Pokémon</button>
         </div>
     </main>
 

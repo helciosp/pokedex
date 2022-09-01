@@ -3,6 +3,19 @@ body {
     padding: 0;
 }
 
+a {
+    color: black;
+}
+
+a:visited {
+    color: #575757;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -12,62 +25,76 @@ header {
     padding: 10px;
 }
 
-header ul {
+main.dark {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 0;
+}
+
+.button.dark {
+    color: white;
+    background-color: black;
+}
+
+#pokedex {
+    padding: 5px;
+}
+
+.list-style {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-header li {
-    margin: 3px;
-}
-
-#pokedex {
-    margin: 0;
-    margin-top: 15px;
-    text-align: center;
-}
-
-#pokedex-div {
+.flex-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#load {
-    width: 170px;
-    height: 30px;
-    margin: 10px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    border: 0;
+.text-center {
+    text-align: center;
+    justify-content: center;
 }
 
 .pokemon {
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
     width: 145px;
     height: 250px;
     margin: 5px;
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .pokemon:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+.pokemon.dark {
+    background-color: rgb(56, 56, 56);
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.pokemon.dark:hover {
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.2);
 }
 
 .id {
     margin: 5px 0 5px 0;
-}
-
-.types {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
 }
 
 .type {
