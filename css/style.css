@@ -11,11 +11,6 @@ a:visited {
     color: #575757;
 }
 
-.github {
-    display: flex;
-    justify-content: center;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -25,9 +20,47 @@ header {
     padding: 10px;
 }
 
+main {
+    min-height: 100vh;
+}
+
 main.dark {
     background-color: black;
     color: white;
+}
+
+#pokedex {
+    padding: 5px;
+}
+
+#div-form-pesquisa {
+    padding: 5px;
+    margin: auto;
+    width: 70vw;
+}
+
+#form-pesquisa {
+    border-radius: 10px;
+    background-color: #8b0000;
+    padding: 10px;
+}
+
+#form-pesquisa div {
+    max-width: 250px;
+}
+
+#form-pesquisa label {
+    color: white;
+}
+
+#form-pesquisa input {
+    margin: 5px;
+    text-align: center;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -42,10 +75,6 @@ main.dark {
 .button.dark {
     color: white;
     background-color: black;
-}
-
-#pokedex {
-    padding: 5px;
 }
 
 .list-style {
@@ -161,4 +190,10 @@ main.dark {
 }
 .type.water {
     background-color: #82a7ff;
+}
+
+@media only screen and (min-width: 603px) {
+    #form-pesquisa div {
+        max-width: 70vw;
+    }
 }
